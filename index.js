@@ -24,7 +24,6 @@ if (VotingAge >= 10) {
   console.log("True");
 }
 
- 
 /*
 Task 1b - Values
 
@@ -44,8 +43,6 @@ if (apple < pear) {
   console.log(apple);
 }
 
-
-
 /*
 Task 1c - Convert Strings to Numbers
 
@@ -58,9 +55,9 @@ Do the following:
 */
 
 var birthYear = "1999";
+
 parseInt(birthYear);
 console.log(birthYear);
-
 
 /*
 Task 1d - Multiply
@@ -71,11 +68,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+function multiply(/*add your code here*/a, b){
     /*add your code here*/
-  }
-
-
+    var product = a * b;
+    return(product);
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
