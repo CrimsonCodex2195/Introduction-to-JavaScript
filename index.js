@@ -123,21 +123,21 @@ function hungryDog(weightInPounds, ageInYears) {
   let foodRequired = 0;
     if (ageInYears >= 1) {
       if (weightInPounds <= 5) {
-        foodRequired = weightInPounds * .05;
+        foodRequired = weightInPounds * 0.05;
       } else if (weightInPounds >= 6 && weightInPounds <= 10) {
-        foodRequired = weightInPounds * .04;
+        foodRequired = weightInPounds * 0.04;
       } else if (weightInPounds >= 11 && weightInPounds <= 15) {
         foodRequired = weightInPounds * 0.03;
       } else if (weightInPounds > 15) {
         foodRequired = weightInPounds * 0.02;
       }
     } else {
-      if (ageInYears  >= .167 && ageInYears <= .333) {
-        foodRequired = weightInPounds * .1;
-      } else if (ageInYears > .33 && ageInYears <= .583) {
-        foodRequired = weightInPounds * .05;
-      } else if (ageInYears > .583) {
-        foodRequired = weightInPounds * .04;
+      if (ageInYears  >= 2/12 && ageInYears <= 4/12) {
+        foodRequired = weightInPounds * 0.1;
+      } else if (ageInYears > 4/12 && ageInYears <= 7/12) {
+        foodRequired = weightInPounds * 0.05;
+      } else if (ageInYears > 7/12) {
+        foodRequired = weightInPounds * 0.04;
       }
     }
     return foodRequired;
@@ -262,8 +262,6 @@ function grade(score){
   }
 }
   
-  
-
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
