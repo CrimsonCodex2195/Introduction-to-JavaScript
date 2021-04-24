@@ -68,11 +68,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/a, b){
-    /*add your code here*/
+function multiply(a, b) {
     var product = a * b;
-    return(product);
+    return product;
 }
+
+multiply(10, 20);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -84,11 +85,12 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(HumanYears) {
+    var dogYears = HumanYears * 7;
+    return dogYears;
 }
 
-
+dogYears(18);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -117,11 +119,31 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weightInPounds, ageInYears) {
+  let foodRequired = 0;
+    if (ageInYears >= 1) {
+      if (weightInPounds <= 5) {
+        foodRequired = weightInPounds * .05;
+      } else if (weightInPounds >= 6 && weightInPounds <= 10) {
+        foodRequired = weightInPounds * .04;
+      } else if (weightInPounds >= 11 && weightInPounds <= 15) {
+        foodRequired = weightInPounds * 0.03;
+      } else if (weightInPounds > 15) {
+        foodRequired = weightInPounds * 0.02;
+      }
+    } else {
+      if (ageInYears  >= .167 && ageInYears <= .333) {
+        foodRequired = weightInPounds * .1;
+      } else if (ageInYears > .33 && ageInYears <= .583) {
+        foodRequired = weightInPounds * .05;
+      } else if (ageInYears > .583) {
+        foodRequired = weightInPounds * .04;
+      }
+    }
+    return foodRequired;
   }
 
-
+hungryDog(15, 1);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -144,10 +166,25 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
+function randomMove(list) {
+  return list[Math.floor(Math.random() * list.length)];
 }
-  
+
+function game(user, computer){
+ if (user === computer ) {
+   return "it's a tie";
+ } else if (user === "rock" && computer === "scissors" || user === "paper" && computer === "rock" || user === "scissors" && computer === "paper" ) {
+   return "you win!"
+ } else {
+   return "you lose"
+ }
+}
+
+const moves = ["rock", "paper", "scissors"];
+var userChoice = randomMove(moves);
+var computerChoice = randomMove(moves);
+
+game(userChoice, computerChoice);
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
