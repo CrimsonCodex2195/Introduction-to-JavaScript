@@ -18,8 +18,13 @@ Do the following:
    HINT: no function required
 */
 
+var VotingAge = 18;
 
+if (VotingAge >= 10) {
+  console.log("True");
+}
 
+ 
 /*
 Task 1b - Values
 
@@ -31,7 +36,13 @@ Do the following:
    HINT: no function required
 */
 
+var apple = 15;
+var pear = 20;
 
+if (apple < pear) {
+  apple = 40;
+  console.log(apple);
+}
 
 
 
@@ -46,7 +57,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+var birthYear = "1999";
+parseInt(birthYear);
+console.log(birthYear);
 
 
 /*
