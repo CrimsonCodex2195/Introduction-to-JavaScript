@@ -176,7 +176,7 @@ function game(user, computer){
  } else if (user === "rock" && computer === "scissors" || user === "paper" && computer === "rock" || user === "scissors" && computer === "paper" ) {
    return "you win!"
  } else {
-   return "you lose"
+   return "you lose!"
  }
 }
 
@@ -198,11 +198,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(kilometers){
+    miles = kilometers * 0.621371;
+    return miles;
   }
-
-
 
 //Task 5b - Feet to CM
 /*
@@ -212,11 +211,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    feet = cm / 30.48
+    return feet;
   }
- 
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
